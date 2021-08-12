@@ -8,10 +8,6 @@ This is an ETL pipeline to pull bitcoin exchange data from [CoinCap API](https:/
 **Architecture**
 
 
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image1.png "image_tooltip")
 
 
@@ -70,14 +66,7 @@ Refer to [this doc](https://www.metabase.com/docs/latest/users-guide/07-dashboar
 
 Helper scripts are used to deploy containers to AWS EC2 deploy_helpers for this.
 
-I use an `ubuntu x_86` EC2 instance with a custom TCP inbound rule with port `3000` open to the IP `0.0.0.0/0`. These can be set when you create an AWS EC2 instance in the `configure security group` section. A `t2.micro` (free-tier eligible) instance would be sufficient.
-
-
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
+I used an `ubuntu x_86` EC2 instance with a custom TCP inbound rule with port `3000` open to the IP `0.0.0.0/0`. These can be set when you create an AWS EC2 instance in the `configure security group` section. A `t2.micro` (free-tier eligible) instance would be sufficient.
 
 
 You can setup a prod instance as shown below.
@@ -118,10 +107,10 @@ make down
 ```
 
 
-**Discussion**
+## **Discussion**
 
 
-### **ETL Code**
+**ETL Code**
 
 The code to pull data from [CoinCap API](https://docs.coincap.io/) and load it into the warehouse is at [exchange_data_etl.py](https://github.com/josephmachado/bitcoinMonitor/blob/main/src/bitcoinmonitor/exchange_data_etl.py). 
 
