@@ -8,7 +8,7 @@ This is an ETL pipeline to pull bitcoin exchange data from [CoinCap API](https:/
 **Architecture**
 
 
-![alt_text](images/image1.png "image_tooltip")
+![alt_text](https://github.com/sanjaykmenon/crypto_etl_dashboard/blob/main/bc_arch.png "image_tooltip")
 
 
 I’ve used python to pull, transform and load data. The warehouse is postgres. As a presentation layer I’ve also added a dashboard interface on Metabase for business stakeholders to view metrics.
