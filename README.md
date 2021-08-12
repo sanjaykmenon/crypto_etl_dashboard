@@ -146,3 +146,17 @@ For the integration test we
 
 1. Mock the Coinbase API call using the mocker functionality of the pytest-mock library. We use fixture data at test/fixtures/sample_raw_exchange_data.csv as a result of an API call. This is to enable deterministic testing.
 2. Assert that the data we store in the warehouse is the same as we expected.
+
+
+**Further things to do**
+
+Lots of future work still left on this but a few that come to mind:
+
+CI/CD with Github actions
+Data quality testing
+Better scheduler and workflow manager to handle backfills, reruns, and parallelism
+Better failure handling
+Streaming data from APIs vs mini-batches
+Add system env variable to crontab
+Data cleanup job to remove old data, since our Postgres is running on a small EC2 instance
+API rate limiting
