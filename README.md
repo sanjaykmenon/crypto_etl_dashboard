@@ -112,7 +112,7 @@ make down
 
 **ETL Code**
 
-The code to pull data from [CoinCap API](https://docs.coincap.io/) and load it into the warehouse is at [exchange_data_etl.py](https://github.com/josephmachado/bitcoinMonitor/blob/main/src/bitcoinmonitor/exchange_data_etl.py). 
+The code to pull data from [CoinCap API](https://docs.coincap.io/) and load it into the warehouse is at [exchange_data_etl.py](https://github.com/sanjaykmenon/crypto_etl_dashboard/blob/main/src/bitcoinmonitor/exchange_data_etl.py). 
 
 In this script, we :
 
@@ -143,8 +143,6 @@ Two kinds of tests are performed:
 2. **Integration test**: To test if multiple systems work together as expected.
 
 For the integration test we
-
-
 
 1. Mock the Coinbase API call using the mocker functionality of the pytest-mock library. We use fixture data at test/fixtures/sample_raw_exchange_data.csv as a result of an API call. This is to enable deterministic testing.
 2. Assert that the data we store in the warehouse is the same as we expected.
