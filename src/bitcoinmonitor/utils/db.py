@@ -20,7 +20,7 @@ class WarehouseConnection:
             f'{db_conn.host}:{db_conn.port}/{db_conn.db}'
         )
 
-    # contecnt manager enables opening & closing of DBs connections easier.
+    # context manager enables opening & closing of DBs connections easier.
     @contextmanager
     def managed_cursor(self, cursor_factory=None):
         self.conn = psycopg2.connect(self.conn_url)
